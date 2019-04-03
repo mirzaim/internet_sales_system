@@ -2,10 +2,6 @@ package shop;
 
 import java.util.HashMap;
 
-enum State {
-    pending,
-    submitted
-}
 
 public class Order {
     private int id;

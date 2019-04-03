@@ -54,4 +54,8 @@ public class Customer {
     public Order[] getSubmittedOrders() {
         return getOrdersByState(State.submitted);
     }
+
+    public void addDiscount(Discount d, Order o){
+
+    }
 }

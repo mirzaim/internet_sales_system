@@ -20,6 +20,10 @@ public class Repository {
         return capacity;
     }
 
+    public int getFreeCapacity() {
+        return capacity - getFilledCapacity();
+    }
+
     public HashMap<Good, Integer> getGoods() {
         return goods;
     }
@@ -30,5 +34,13 @@ public class Repository {
             filledCapacity += entry.getValue();
         }
         return filledCapacity;
+    }
+
+    public void addGood(Good g, int amount) {
+
+    }
+
+    public void removeGood(Good g, int amount) {
+
     }
 }
